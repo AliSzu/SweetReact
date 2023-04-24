@@ -1,0 +1,9 @@
+.title {
+  font-size: 3rem;
+
+  &::before,
+  &::after {
+    width: 30px;
+    margin: 0 20px;
+  }
+}

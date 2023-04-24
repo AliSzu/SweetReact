@@ -1,0 +1,14 @@
+.titleName {
+    font-family: "Oranienbaum";
+    font-style: normal;
+    text-align: center;
+    color: #07122f;
+  
+    &::before,
+    &::after {
+      display: inline-block;
+      content: "";
+      border-top: 0.2rem solid #2C94E8;
+      transform: translateY(-0.8rem);
+    }
+  }

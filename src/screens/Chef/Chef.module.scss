@@ -1,0 +1,70 @@
+.container__chef {
+  width: 100%;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 42%,
+    rgba(242, 249, 255, 1) 42%
+  );
+}
+
+.container__chef__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.grid-chef {
+  padding: 50px 0px 50px 0px;
+  display: grid;
+  grid-template-columns: 55% 45%;
+  width: 90%;
+}
+
+.grid__col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(255, 255, 255);
+}
+
+.grid__text {
+  display: grid;
+  grid-template-rows: 20% 70% 10%;
+}
+
+.grid__text__description {
+  padding: 15px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 1.2rem;
+  line-height: 30px;
+}
+
+.recipe-btn {
+  background-color: #2C94E8;
+  color: white;
+  border: None;
+  margin-left: auto;
+  padding: 10px;
+
+}
+
+@media only screen and (max-width: 700px) {
+  .grid-chef {
+    grid-template-columns: 1fr;
+  }
+
+  .grid__text {
+    grid-template-rows: 1fr;
+    background-color: rgb(255, 255, 255);
+  }
+
+  .recipe-btn {
+    width: 100%;
+  }
+
+}

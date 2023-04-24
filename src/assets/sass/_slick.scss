@@ -1,0 +1,15 @@
+.slick-slide > div {
+  margin: 30px 15px;
+}
+.slick-list {
+  margin: 0px -15px;
+}
+
+.slick-dots {
+  position: initial !important;
+  padding-bottom: 30px !important;
+}
+.slick-prev:before,
+.slick-next:before {
+  color: #2c94e8 !important;
+}

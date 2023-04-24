@@ -1,0 +1,15 @@
+.shopContainer {
+  width: 100%;
+  padding: 50px 0px 50px 0px;
+  background-color: #f5f6f8;
+}
+.title {
+  padding-bottom: 1rem;
+  font-size: 30px;
+
+  &::before,
+  &::after {
+    width: 30px;
+    margin: 0 20px;
+  }
+}

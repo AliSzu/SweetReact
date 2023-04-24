@@ -1,0 +1,34 @@
+.title__container {
+  background: #ffffff;
+  text-align: center;
+  
+}
+
+.title__wrapper {
+  margin-left: -50px;
+  margin-top: 30px;
+}
+
+.title-chef {
+  font-size: 1.7rem;
+  text-align: center;
+  padding: 10px 0px 10px 0px;
+
+  &::before,
+  &::after {
+    width: 20px;
+    margin: 0 10px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .title__wrapper {
+    margin: 0;
+  }
+
+  .title__container {
+    border: None;
+    
+  }
+
+}

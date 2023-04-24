@@ -1,0 +1,71 @@
+.description-container {
+  padding: 50px 0px 50px 0px;
+  background-color: #f5f6f8;
+  font-family: "Inter";
+  font-style: normal;
+}
+
+.description-grid {
+  padding: 50px 0px 50px 0px;
+  display: grid;
+  grid-template-columns: 70% 30%;
+  width: 90%;
+}
+
+.description {
+  border-right: 1px solid rgb(117, 117, 117);
+  padding-right: 40px;
+}
+
+.description-title {
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
+}
+
+.description-text {
+  font-weight: 100;
+  font-size: 1.2rem;
+  line-height: 30px;
+}
+
+.allergens {
+  padding-left: 30px;
+}
+
+.allergens-list {
+  display: inline-block;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  .list-item {
+    padding: 15px;
+
+    &::before {
+     content: '';
+     display: inline-block;
+     width: 13px;
+     height: 2px;
+     background: #2C94E8;
+     transform: translateY(-0.2rem);
+     margin-right: 20px;
+    }
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .description-grid {
+    padding: 0px;
+    grid-template-columns: 1fr;
+  }
+  .description {
+    border-right: None;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(117, 117, 117);
+  }
+  .allergens {
+    padding-left: 0px;
+    padding-top: 20px;
+  }
+
+}
