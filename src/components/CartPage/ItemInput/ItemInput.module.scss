@@ -1,0 +1,38 @@
+.value {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f6f8;
+  }
+
+.item {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: 40px;
+  width: 100px;
+  text-align: center;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    // background-color: #f5f6f8;
+    // width: 25px;
+    // height: 25px;
+  }
+  
+  .value-btn {
+    background-color: #f5f6f8;
+    height: 100%;
+    &:hover {
+      background-color: #adadad62;
+    }
+
+    &--inc {
+      @extend .value-btn;
+      border-radius: 20px 0px 0px 20px;
+    }
+
+    &--dec {
+      @extend .value-btn;
+      border-radius: 0px 20px 20px 00px;
+    }
+  }

@@ -1,0 +1,67 @@
+.product-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  overflow: hidden;
+  font-family: "Oranienbaum";
+  font-style: normal;
+  letter-spacing: 0.2rem;
+}
+
+.product-grid {
+  display: grid;
+  width: 90%;
+  padding: 30px;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3rem;
+}
+
+.product-img {
+  width: 100%;
+  height: 30rem;
+  object-fit: cover;
+}
+
+.product-id {
+    font-size: 0.8rem;
+    padding-bottom: 20px;
+}
+
+.product-info__container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.price {
+  width: 100%;
+  font-size: 1.5rem;
+  padding-bottom: 20px;
+}
+
+.product-title {
+  font-size: 3.5rem;
+}
+
+@media only screen and (max-width: 700px) {
+  .product-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 20px;
+  }
+  .product-title {
+    font-size: 2.5rem;
+  }
+
+  .product-img {
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+  }
+  .product-btn {
+    width: 100%;
+  }
+  .product-container {
+    width: auto;
+}
+}

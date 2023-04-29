@@ -8,6 +8,7 @@ import store from "./store/store";
 import ScrollToTop from "./router/scrollToTop";
 
 function App() {
+  
   return (
     <Suspense fallback={<div>Loading...</div>}>
       <Provider store={store}>

@@ -1,0 +1,19 @@
+.product-btn {
+  background-color: #2c94e8;
+  height: 40px;
+  width: 200px;
+  color: white;
+  padding: 10px;
+  transition: 0.3s;
+  &:hover {
+    background-color: white;
+    color: #2c94e8;
+    border: 1px solid #2c94e8;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .product-btn {
+    width: 100%;
+  }
+}

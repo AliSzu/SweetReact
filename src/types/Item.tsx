@@ -1,11 +1,10 @@
-export default interface Item
-{
-    id: string,
-    name: string,
-    price: number,
-    imgSrc: string,
-    shortDesc: string,
-    title: string,
-    longDesc: string,
-    allergens: []
+export default interface Item {
+  id: string;
+  name: string;
+  price: number;
+  imgSrc: string;
+  shortDesc: string;
+  title: string;
+  longDesc: string;
+  allergens: string[];
 }

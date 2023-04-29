@@ -1,0 +1,41 @@
+.container {
+  width: 100%;
+  background: rgb(255, 255, 255);
+  padding-top: 50px;
+}
+
+.cart-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 90%;
+}
+
+.title {
+  padding-bottom: 4rem;
+  font-size: 35px;
+
+  &::before,
+  &::after {
+    width: 30px;
+    margin: 0 20px;
+  }
+}
+
+.order-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 0.5fr;
+    column-gap: 30px;
+}
+
+@media only screen and (max-width: 700px) {
+    .order-container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        column-gap: 30px;
+    }
+  }
+

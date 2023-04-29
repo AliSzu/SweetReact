@@ -38,6 +38,7 @@ const itemSlice = createSlice({
           longDesc: action.payload.longDesc,
           allergens: action.payload.allergens
         };
+
     },
   },
 });

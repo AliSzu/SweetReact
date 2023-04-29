@@ -24,7 +24,7 @@ const Chef = forwardRef<HTMLDivElement, IChef>((props: IChef, ref) => {
               loyal following of dessert lovers.
             </div>
             <button className={classes["recipe-btn"]}>
-              LEARN HIS SECRET RECIPES!
+              TRY OUT HIS BEST PRODUCTS!
             </button>
           </div>
         </div>
