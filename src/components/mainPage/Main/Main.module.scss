@@ -62,7 +62,7 @@ h2 {
   }
   .main__content--h1 {
     margin: 2rem 0rem 1.5rem 0rem;
-    font-size: 2.5rem;
+    font-size: 2.6rem;
   }
   .title {
     color: white;
@@ -71,6 +71,16 @@ h2 {
 }
 
 @media only screen and (max-width: 400px) {
+  .main__content--h1 {
+    font-size: 2.2rem;
+    color: white;
+  }
+  h2 {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 300px) {
   .main__content--h1 {
     font-size: 1.5rem;
     color: white;
