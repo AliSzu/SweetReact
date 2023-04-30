@@ -1,22 +1,18 @@
 import React, { useState, useRef, useEffect } from "react";
 import Main from "../../components/mainPage/Main/Main";
 import Header from "../../components/common/header/Header";
-import Shop from "../ShopPreview/ShopPreview";
 import Chef from "../Chef/Chef";
-import classes from "./Home.module.scss";
-import { fetchItemsData } from "../../store/actions/item-actions";
 import { addCartItem, fetchCartData } from "../../store/actions/cart-actions";
 import { useAppDispatch } from "../../store/store";
 import { useAppSelector } from "../../store/store";
-
-function MainPage() {
+import ShopPreview from "../ShopPreview/ShopPreview";
+function MainPage() {  
   const shopRef = useRef<HTMLDivElement>(null);
   const chefRef = useRef<HTMLDivElement>(null);
   const dispatch = useAppDispatch();
   const cart = useAppSelector((state) => state.cart);
 
   useEffect(() => {
-    dispatch(fetchItemsData());
     dispatch(fetchCartData());
   }, [dispatch]);
 
@@ -30,7 +26,7 @@ function MainPage() {
     <React.Fragment>
       <Header chefRef={chefRef} shopRef={shopRef} />
       <Main />
-      <Shop ref={shopRef} />
+      <ShopPreview ref={shopRef}/>
       <Chef ref={chefRef} />
     </React.Fragment>
   );

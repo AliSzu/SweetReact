@@ -29,3 +29,9 @@ a:-webkit-any-link {
   cursor: pointer;
   color: inherit;
 }
+.loading{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px
+}

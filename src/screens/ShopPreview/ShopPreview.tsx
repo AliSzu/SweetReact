@@ -1,22 +1,36 @@
-import React, { FC, ReactNode, RefObject } from "react";
+import React, { FC, useEffect, useState } from "react";
 import classes from "./ShopPreview.module.scss";
-import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import ShopSlider from "../../components/ShopPreviewPage/ShopSlider/ShopSlider";
 import Title from "../../components/common/Title/Title";
 import { forwardRef } from "react";
+import CircularProgress from "@mui/material/CircularProgress";
+import { useAppDispatch } from "../../store/store";
+import { fetchItemsData } from "../../store/actions/item-actions";
 
-interface IShop {}
+interface IShopPreview {}
 
-const Shop = forwardRef<HTMLDivElement, IShop>((props: IShop, ref) => {
+const ShopPreview = forwardRef<HTMLDivElement, IShopPreview>((props: IShopPreview, ref) => {
+  const [loading, setLoading] = useState(false);
+  const dispatch = useAppDispatch();
+
+  useEffect(() => {
+    setLoading(true);
+    dispatch(fetchItemsData()).finally(() => {
+      setLoading(false);
+  });
+  }, [dispatch]);
+
+
   return (
     <div className={classes.shopContainer} ref={ref}>
       <div className="wrapper">
         <Title className={classes.title}>SWEETST SWEET</Title>
-        <ShopSlider />
+        {loading ? (<div className="loading"><CircularProgress/></div>) :
+        <ShopSlider/> }
       </div>
     </div>
   );
 });
-export default Shop;
+export default ShopPreview;

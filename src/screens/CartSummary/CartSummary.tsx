@@ -11,7 +11,7 @@ interface ICartSummary {}
 
 const CartSummary: FC<ICartSummary> = (props: ICartSummary) => {
   const product = useAppSelector((state) => state.summary.summaryItem);
-  const cartQuantity = useAppSelector((state) => state.cart.quantity);
+  const cartTotalPrice = useAppSelector((state) => state.cart.totalPrice);
   const dispatch = useAppDispatch();
   const navigate = useNavigate();
 
@@ -50,7 +50,7 @@ const CartSummary: FC<ICartSummary> = (props: ICartSummary) => {
             <div>
               <div className={classes["cart-total"]}>
                 <span>Cart Total</span>
-                <span>$666</span>
+                <span>${cartTotalPrice}</span>
               </div>
             </div>
             <div className={classes["actions"]}>

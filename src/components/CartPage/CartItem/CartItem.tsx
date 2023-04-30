@@ -12,7 +12,7 @@ const CartItem: FC<ICartItem> = (props: ICartItem) => {
 
   const itemDictionary = {
     "item-name": props.item.item.name,
-    "item-price": <b>${props.item.item.price}</b>,
+    "item": <b>${props.item.item.price}</b>,
   };
   const itemElements = Object.entries(itemDictionary).map(([key, value]) => {
     return <div className={classes[`${key}`]} key={key}>{value}</div>;
@@ -24,10 +24,10 @@ const CartItem: FC<ICartItem> = (props: ICartItem) => {
         <img src={props.item.item.imgSrc} className={classes["item-img"]} />
       </div>
       {itemElements}
-      <div className={classes.item}>
+      <div className={classes['item-input']}>
         <ItemInput item={props.item.item} value={props.item.quantity} />
       </div>
-      <div className={classes.item}>
+      <div className={classes['item-price']}>
         <b>${totalPrice}</b>
       </div>
     </li>

@@ -78,9 +78,11 @@
 
 .alert {
   position: absolute;
+  width: 34rem;
   top:0;
-  left: 35%;
+  left: calc(50% - 16rem);
   animation: slide-down 300ms ease-out forwards;
+  cursor: pointer;
 }
 
 @keyframes slide-down {
@@ -104,5 +106,9 @@
 
   .total {
     font-size: 30px;
+  }
+
+  .alert {
+    left: 0;
   }
 }

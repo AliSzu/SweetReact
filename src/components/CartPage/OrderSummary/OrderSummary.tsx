@@ -38,7 +38,7 @@ const OrderSummary: FC<IOrderSummary> = (props: IOrderSummary) => {
   return (
     <React.Fragment>
       {checkoutSuccess && (
-        <Alert severity="success" className={classes.alert}>
+        <Alert severity="success" className={classes.alert} onClick={() => (setCheckoutSuccess(false))}>
           Your Cart has been sucessfully checked out! Soon you will get your
           items
         </Alert>

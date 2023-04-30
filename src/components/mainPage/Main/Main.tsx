@@ -1,6 +1,7 @@
 import React, { FC, useState } from "react";
 import classes from "./Main.module.scss";
 import Title from "../../common/Title/Title";
+import { ScrollRestoration } from "react-router-dom";
 
 interface IMain {}
 
