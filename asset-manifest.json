@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/SweetReact/static/css/main.afb384ce.css",
-    "main.js": "/SweetReact/static/js/main.e4e8439b.js",
-    "static/media/pancake.jpg": "/SweetReact/static/media/pancake.4c1efdfb019b3a2f2d5f.jpg",
-    "static/media/chef.jpg": "/SweetReact/static/media/chef.6764ef0fbf3b459e7b4f.jpg",
-    "static/media/slick.svg": "/SweetReact/static/media/slick.2630a3e3eab21c607e21.svg",
-    "static/media/slick.eot": "/SweetReact/static/media/slick.a4e97f5a2a64f0ab1323.eot",
-    "static/media/slick.ttf": "/SweetReact/static/media/slick.c94f7671dcc99dce43e2.ttf",
-    "static/media/slick.woff": "/SweetReact/static/media/slick.295183786cd8a1389865.woff",
-    "index.html": "/SweetReact/index.html",
-    "main.afb384ce.css.map": "/SweetReact/static/css/main.afb384ce.css.map",
-    "main.e4e8439b.js.map": "/SweetReact/static/js/main.e4e8439b.js.map"
+    "main.css": "./static/css/main.33ee3aed.css",
+    "main.js": "./static/js/main.d726a692.js",
+    "static/media/pancake.jpg": "./static/media/pancake.4c1efdfb019b3a2f2d5f.jpg",
+    "static/media/chef.jpg": "./static/media/chef.6764ef0fbf3b459e7b4f.jpg",
+    "static/media/slick.svg": "./static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "./static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "./static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "./static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "./index.html",
+    "main.33ee3aed.css.map": "./static/css/main.33ee3aed.css.map",
+    "main.d726a692.js.map": "./static/js/main.d726a692.js.map"
   },
   "entrypoints": [
-    "static/css/main.afb384ce.css",
-    "static/js/main.e4e8439b.js"
+    "static/css/main.33ee3aed.css",
+    "static/js/main.d726a692.js"
   ]
 }
