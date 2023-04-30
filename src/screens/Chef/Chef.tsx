@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import React from "react";
 import classes from "./Chef.module.scss";
 import ChefImage from "../../components/chefPage/ChefImage/ChefImage";
 import ChefTitle from "../../components/chefPage/ChefTitle/ChefTitle";

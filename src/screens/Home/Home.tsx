@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useRef, useEffect } from "react";
 import Main from "../../components/mainPage/Main/Main";
 import Header from "../../components/common/header/Header";
 import Chef from "../Chef/Chef";

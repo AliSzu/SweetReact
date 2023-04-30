@@ -1,7 +1,7 @@
 import React, { FC, useEffect, useState } from "react";
 import Header from "../../components/common/header/Header";
 import { useAppDispatch } from "../../store/store";
-import classes from "./Cart.module.scss";
+import classes from "./Cart.module.scss"
 import Title from "../../components/common/Title/Title";
 import CartList from "../../components/CartPage/CartList/CartList";
 import { fetchCartData } from "../../store/actions/cart-actions";

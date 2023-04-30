@@ -23,7 +23,6 @@ export const fetchItemById = (id: string) => {
     const fetchData = async () => {
       const docRef = doc(db, "item", "2Mfbdkw9ORQOM9aFo5Wa");
       const docSnap = await getDoc(docRef);
-      const items = docSnap.data();
       return docSnap.data();
     };
     try {

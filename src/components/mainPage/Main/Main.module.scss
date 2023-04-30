@@ -36,7 +36,7 @@ h2 {
 .main__content--h1 {
   margin: 0rem 0rem 0.5rem 0rem;
   font-size: 4.5rem;
-  color: white
+  color: white;
 }
 
 .title {
@@ -48,7 +48,7 @@ h2 {
   &::after {
     width: 20px;
     margin: 0 20px;
-    border-top: 0.05rem solid #2C94E8;
+    border-top: 0.05rem solid #2c94e8;
   }
 }
 
@@ -67,7 +67,25 @@ h2 {
   .title {
     color: white;
     font-size: 0.8rem;
+  }
 }
+
+@media only screen and (max-width: 400px) {
+  .main__content--h1 {
+    font-size: 1.5rem;
+    color: white;
+  }
+  h2 {
+    font-size: 1rem;
+  }
+  .title {
+    font-size: 0.6rem;
+    &::before,
+    &::after {
+      width: 10px;
+      margin: 0 10px;
+    }
+  }
 }
 
 @media only screen and (min-width: 1280px) {

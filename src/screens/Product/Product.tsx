@@ -1,5 +1,5 @@
 import React, { FC, useEffect, useState } from "react";
-import { ScrollRestoration, useLocation, useParams } from "react-router-dom";
+import { ScrollRestoration, useParams } from "react-router-dom";
 import Header from "../../components/common/header/Header";
 import ProductItem from "../../components/ProductPage/ProductItem/ProductItem";
 import ProductDescription from "../../components/ProductPage/ProductDescription/ProductDescription";
@@ -15,7 +15,6 @@ interface IProduct {}
 const Product: FC<IProduct> = (props: IProduct) => {
   const [loading, setLoading] = useState(false);
   const { id } = useParams();
-  const { pathname } = useLocation();
   const dispatch = useAppDispatch();
   const product = useAppSelector((state) => state.item.items);
   const showSummary = useAppSelector((state) => state.summary.show);
@@ -32,15 +31,7 @@ const Product: FC<IProduct> = (props: IProduct) => {
         });
       }
     }
-  }, [dispatch]);
-
-  useEffect(() => {
-    document.documentElement.scrollTo({
-        top: 0,
-        left: 0,
-    });
-}, []);
-
+  }, [product, id, dispatch]);
 
   return (
     <React.Fragment>
