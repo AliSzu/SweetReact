@@ -1,5 +1,5 @@
 import React, { FC, useEffect, useState } from "react";
-import { ScrollRestoration, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import Header from "../../components/common/header/Header";
 import ProductItem from "../../components/ProductPage/ProductItem/ProductItem";
 import ProductDescription from "../../components/ProductPage/ProductDescription/ProductDescription";
@@ -13,6 +13,10 @@ import CartSummary from "../CartSummary/CartSummary";
 interface IProduct {}
 
 const Product: FC<IProduct> = (props: IProduct) => {
+  useEffect(() => {
+    document.body.scrollTop = 0;
+  }, []);
+
   const [loading, setLoading] = useState(false);
   const { id } = useParams();
   const dispatch = useAppDispatch();
@@ -35,7 +39,6 @@ const Product: FC<IProduct> = (props: IProduct) => {
 
   return (
     <React.Fragment>
-      <ScrollRestoration/>
       {showSummary && <CartSummary />}
       <Header shopRef={null} chefRef={null} />
       {loading ? (

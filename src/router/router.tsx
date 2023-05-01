@@ -1,7 +1,7 @@
 import React from 'react';
 import { createBrowserRouter, createHashRouter } from 'react-router-dom';
 import MainPage from '../screens/Home/Home';
-import ShopPage from '../screens/Product/Product';
+import Product from '../screens/Product/Product';
 import Cart from '../screens/Cart/Cart';
 
 const router = createHashRouter([
@@ -11,7 +11,7 @@ const router = createHashRouter([
   },
   {
     path: '/products/:id',
-    element: <ShopPage/>
+    element: <Product/>
   },
   {
     path: '/cart',
